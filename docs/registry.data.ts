@@ -30,7 +30,7 @@ export default {
         backends: backends.map((backend: Backend) => {
           let name = typeof backend === "string" ? backend : backend.full;
           // replace selector square brackets
-          name = name.replace(/(.*?)\[.*\]/g, "$1")
+          name = name.replace(/(.*?)\[.*\]/g, "$1");
           const parts = name.toString().split(":");
           const prefix = parts[0];
           const slug = parts[1];
